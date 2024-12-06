@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/*---------------------------Projects---------------------------*/
+.project-content {
+  padding: 90px 0;
+}
+
+.project-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.project-title h4 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+
+.project-title p {
+  color: #e5e5e5;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  text-align: center;
+  flex-basis: 32%;
+  transition: .3s;
+}
+
+.project i {
+  background-color: #fed700;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  font-size: 26px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.project h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.project p {
+  text-align: justify;
+}
+
+.project:hover {
+  border-color: #fed700;
+}
+
+/*---------------------------Footer---------------------------*/
+.footer {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 15px 0 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .message {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+/*------------------- Responsive Design on small screen -------------------*/
+/* Medium layout */
+@media only screen and (min-width:1000px) and (max-width:1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media(max-width:1050px) {
+  .FirstElement {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .profile-text {
+    padding: 40px 0px;
+  }
+}
+
+/* tablet layout */
+@media only screen and (min-width:768px) and (max-width:999px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Mobile Layout */
+@media only screen and (max-width:767px) {
+  .container {
+    width: 350px;
+  }
+  .profile-text {
+    width: 350px;
+  }
+  .FirstElement .profile-text p {
+    text-align: justify;
+  }
+  .project {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
